@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(../images/bg-pattern-intro.svg);
+  width: 100%;
+  height: 97vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: #ff3d54;
+  background-position: center;
+  background-size: 150%;
+  color: white;
+  padding: 1.875rem;
+  border-bottom-left-radius: 5.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+header nav p.title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.81rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 3.4375rem;
+}
+
+header nav ul li {
+  margin: 5px;
+  margin-right: 2rem;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a.dropdown-toggle::after {
+  display: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #fff;
+}
+
+header nav ul li a:hover img {
+  transform: rotate(-180deg);
+}
+
+header nav ul li a:active {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #fff;
+}
+
+header nav ul li a:active img {
+  transform: rotate(-180deg);
+}
+
+header nav ul li span img {
+  color: white;
+}
+
+header nav ul li ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header nav ul li ul li a:hover {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+header nav div button {
+  margin: 5px;
+  margin-right: 3rem;
+  border: 0;
+  background: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+header nav div button.login {
+  color: white;
+  font-size: 1.25rem;
+}
+
+header nav div button.signUp {
+  background: white;
+  padding: 10px 1.875rem;
+  border-radius: 1.5625rem;
+  color: #ff525d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header nav div button.signUp:hover {
+  color: white;
+  background: #ff858d;
+}
+
+header .firstPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.375rem;
+}
+
+header .firstPart h1 {
+  font-weight: 600;
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+header .firstPart p {
+  opacity: 0.7;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+header .firstPart .topBtns {
+  text-align: center;
+  margin-bottom: 5.6125rem;
+}
+
+header .firstPart .topBtns button {
+  border: 0;
+  background: none;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+header .firstPart .topBtns button.firstBtn {
+  background: white;
+  padding: 10px 1.875rem;
+  border-radius: 25px;
+  color: #ff525d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header .firstPart .topBtns button.firstBtn:hover {
+  color: white;
+  background: #ff858d;
+}
+
+header .firstPart .topBtns button.secondBtn {
+  color: white;
+  font-size: 13px;
+  border: 1px solid white;
+  padding: 10px 1.875rem;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+header .firstPart .topBtns button.secondBtn:hover {
+  color: #ff525d;
+  background-color: white;
+}
+
+.second .secondTitle {
+  margin: 8rem;
+  font-weight: 700;
+  color: #1f3f5b;
+  font-size: 2.5rem;
+}
+
+.second .secondPart h3 {
+  color: #1f3f5b;
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.second .secondPart .fPara {
+  margin-bottom: 6.25rem;
+}
+
+.second .secondPart .secondImg img {
+  position: relative;
+  bottom: 15.625rem;
+  left: 11.25rem;
+}
+
+.second .secondPart .secondImg .editor-mobile {
+  display: none;
+}
+
+.thirdPart {
+  width: 100%;
+  background: #3f4164;
+  color: white;
+  position: relative;
+  bottom: 9.375rem;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  height: 25rem;
+}
+
+.thirdPart .leftThirdPart .phone-image {
+  position: relative;
+  bottom: 4.375rem;
+}
+
+.thirdPart .rightThirdPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 6.25rem;
+  min-height: 100%;
+  justify-content: center;
+  left: 12.5rem;
+}
+
+.thirdPart .rightThirdPart h3 {
+  text-align: left;
+  margin-bottom: 1.875rem;
+  font-weight: 600;
+  font-size: 2.18rem;
+  position: relative;
+  right: 0.625rem;
+}
+
+.thirdPart .rightThirdPart p {
+  text-align: left;
+}
+
+.fourthPart .fourthImage .mobile-laptop {
+  display: none;
+}
+
+.fourthPart .fourthImage img {
+  position: relative;
+  right: 17.2rem;
+  bottom: 3.125rem;
+}
+
+.fourthPart .rightFourthPara {
+  position: relative;
+  top: 7.5rem;
+  left: 5rem;
+}
+
+.fourthPart .rightFourthPara h3 {
+  color: #1f3f5b;
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.fourthPart .rightFourthPara .fourthTopPara {
+  margin-bottom: 6.25rem;
+}
+
+footer {
+  background: #2c2d3f;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-top: 3.125rem;
+  padding-bottom: 2.5rem;
+  border-top-right-radius: 6rem;
+}
+
+footer .footerTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  position: relative;
+  bottom: 1.25rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div p {
+  font-weight: 700;
+}
+
+footer div ul li:hover {
+  cursor: pointer;
+  color: white;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+footer li {
+  list-style: none;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
