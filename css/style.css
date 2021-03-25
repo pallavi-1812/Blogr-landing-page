@@ -221,27 +221,28 @@ header .firstPart .topBtns button.secondBtn:hover {
   width: 100%;
   background: #3f4164;
   color: white;
-  position: relative;
-  bottom: 9.375rem;
   border-top-right-radius: 6rem;
   border-bottom-left-radius: 6rem;
   height: 25rem;
+  display: flex;
+}
+
+.thirdPart .leftThirdPart {
+  margin: 0 5rem;
 }
 
 .thirdPart .leftThirdPart .phone-image {
   position: relative;
-  bottom: 4.375rem;
+  bottom: 4.8rem;
 }
 
 .thirdPart .rightThirdPart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  bottom: 6.25rem;
+  margin: 0 7rem;
   min-height: 100%;
   justify-content: center;
-  left: 12.5rem;
 }
 
 .thirdPart .rightThirdPart h3 {
@@ -250,11 +251,15 @@ header .firstPart .topBtns button.secondBtn:hover {
   font-weight: 600;
   font-size: 2.18rem;
   position: relative;
-  right: 0.625rem;
+  right: 3.8rem;
 }
 
 .thirdPart .rightThirdPart p {
   text-align: left;
+}
+
+.fourthPart {
+  margin-top: 6rem;
 }
 
 .fourthPart .fourthImage .mobile-laptop {
@@ -321,5 +326,130 @@ footer div ul li:hover {
 footer li {
   list-style: none;
   opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+  header nav ul li {
+    margin-right: 1rem;
+  }
+  header nav .navBtns {
+    margin: 2rem auto;
+  }
+  .second {
+    height: 100%;
+    margin-bottom: 10rem;
+  }
+  .second .topSecPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second .secondPart {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .second .secondPart .secondImg {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .second .secondPart .secondImg .editor-mobile {
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 3rem;
+  }
+  .second .secondPart .secondImg .editor-desktop {
+    display: none;
+  }
+  .thirdPart {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    bottom: 0;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thirdPart .leftThirdPart {
+    position: relative;
+    top: 7rem;
+  }
+  .thirdPart .rightThirdPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 8rem;
+  }
+  .thirdPart .rightThirdPart h3 {
+    text-align: center;
+    right: 0;
+  }
+  .thirdPart .rightThirdPart p {
+    text-align: center;
+  }
+  .fourthPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+  }
+  .fourthPart .fourthImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourthPart .fourthImage img.desktop-laptop {
+    display: none;
+  }
+  .fourthPart .fourthImage .mobile-laptop {
+    display: block;
+    right: 0;
+    bottom: 0;
+  }
+  .fourthPart .rightFourthPara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+  }
+  .fourthPart .rightFourthPara p {
+    text-align: center;
+  }
+  .fourthPart .rightFourthPara p.fourthTopPara {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  footer .footerTitle {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  header nav ul {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
